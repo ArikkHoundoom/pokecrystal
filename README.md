@@ -1,8 +1,10 @@
 # Pokémon Crystal [![Build Status][ci-badge]][ci]
 
-This is a disassembly of Pokémon Crystal.
+This is an experimental personal project based on the disassembly of Pokémon Crystal.
+It is meant to serve as a base for an hypothetical further modification of the game, by implementing new music and maps and fixing known glitches, essentially softmodding Pokémon Crystal. The hardmod's goals are to be determined.
 
-It builds the following ROMs:
+
+It builds the following ROMs (ignore the hashes for now):
 
 - Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc `sha1: f4cd194bdee0d04ca4eac29e09b8e4e9d818c133`
 - Pokemon - Crystal Version (UE) (V1.1) [C][!].gbc `sha1: f2f52230b536214ef7c9924f483392993e226cfb`

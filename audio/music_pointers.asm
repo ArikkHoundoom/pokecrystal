@@ -107,4 +107,9 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+; new to this mod
+	dba Music_Shop
+	dba Music_CeruleanCity
+	dba Music_CinnabarIsland
+	dba Music_Route24
 	assert_table_length NUM_MUSIC_SONGS

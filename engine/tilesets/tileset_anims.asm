@@ -638,27 +638,9 @@ ForestTreeRightAnimation2:
 	jp WriteTile
 
 GetForestTreeFrame:
-; Return 0 if a is even, or 2 if odd.
-	and a
-	jr z, .even
-	cp 1
-	jr z, .odd
-	cp 2
-	jr z, .even
-	cp 3
-	jr z, .odd
-	cp 4
-	jr z, .even
-	cp 5
-	jr z, .odd
-	cp 6
-	jr z, .even
-.odd
-	ld a, 2
-	scf
-	ret
-.even
-	xor a
+; Return 0 if a is even, or 2 if odd. Code simplified as per https://github.com/pret/pokecrystal/blob/master/docs/design_flaws.md#getforesttreeframe-works-but-its-still-bad
+	and 1
+	add a
 	ret
 
 AnimateFlowerTile:

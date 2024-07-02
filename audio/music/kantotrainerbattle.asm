@@ -812,7 +812,7 @@ Music_KantoTrainerBattle_Ch2:
 	vibrato 6, 3, 6
 	duty_cycle 1
 	transpose 0, 0
-	octave 3
+	octave 4
 	note A_, 4
 	note A_, 4
 	note A_, 4
@@ -824,7 +824,6 @@ Music_KantoTrainerBattle_Ch2:
 	note G_, 1
 	note F#, 1
 	note F_, 1
-	octave 4
 	duty_cycle 3
 	volume_envelope 6, 2
 .loop1:
@@ -911,7 +910,7 @@ Music_KantoTrainerBattle_Ch2:
 	note C_, 1
 	note E_, 1
 	rest 1
-	note G#, 2
+	note G_, 2
 	octave 4
 	note C_, 1
 	rest 1

@@ -531,11 +531,15 @@ Script_specialsound:
 	cp TM_HM
 	ld de, SFX_GET_TM
 	jr z, .play
+	ld a, [wCurItem]
+	cp BerryItems
+	ld de, SFX_GET_BERRY
+	jr z, .play
 	ld de, SFX_ITEM
 .play
 	call PlaySFX
 	call WaitSFX
-	ret
+	ret	
 
 GetPocketName:
 	farcall CheckItemPocket

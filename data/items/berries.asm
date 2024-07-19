@@ -1,4 +1,4 @@
-Berries:
+BerryItems:
     db PSNCUREBERRY
     db PRZCUREBERRY
     db BURNT_BERRY

@@ -283,3 +283,89 @@ Sfx_Twinkle_Ch5:
 	octave 5
 	note G_, 6
 	sound_ret
+
+;new to this mod
+
+Sfx_Berry:
+	channel_count 3
+	channel 1, Sfx_Berry_Ch5
+	channel 2, Sfx_Berry_Ch6
+	channel 3, Sfx_Berry_Ch7
+
+Sfx_Berry_Ch5:
+	volume 7, 7
+	tempo 79
+	octave 4
+	duty_cycle 2
+	note_type 6, 7, 7
+	note F_, 3
+	note_type 6, 6, 7
+	note F_, 3
+	note_type 12, 7, 7
+	note F_, 1
+	note_type 6, 7, 7
+	note C_, 3
+	note_type 6, 6, 7
+	note C_, 3
+	note_type 12, 7, 7
+	note C_, 1
+	octave 5
+	note C_, 1
+	rest 1
+	note_type 6, 7, 7
+	rest 1
+	note_type 12, 7, 7
+	note D_, 1
+	rest 1
+	note_type 1, 7, 7
+	rest 6
+	note_type 12, 7, 7
+	note C_, 2
+	rest 1
+	note_type 6, 7, 7
+	note F_, 3
+	note_type 6, 6, 7
+	note F_, 3
+	note_type 12, 7, 7
+	note F_, 1
+	note F_, 1
+	sound_ret
+
+Sfx_Berry_Ch6:
+	duty_cycle 1
+	note_type 12, 6, 7
+	octave 3
+	note F_, 8
+	note G_, 1
+	rest 1
+	note_type 6, 6, 7
+	rest 1
+	note_type 12, 6, 7
+	note G_, 1
+	rest 1
+	note_type 1, 6, 7
+	rest 6
+	note_type 12, 6, 7
+	note G_, 2
+	rest 1
+	note F_, 5
+	sound_ret
+
+Sfx_Berry_Ch7:
+	note_type 12, 2, 0
+	octave 3
+	note A_, 8
+	note A#, 1
+	rest 1
+	note_type 6, 2, 0
+	rest 1
+	note_type 12, 2, 0
+	note A#, 1
+	note_type 1, 2, 0
+	rest 6
+	note_type 12, 2, 0
+	rest 1
+	note A#, 2
+	rest 1
+	note A_, 5
+	sound_ret

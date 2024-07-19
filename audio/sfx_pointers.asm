@@ -209,4 +209,6 @@ SFX:
 	dba Sfx_TwoPcBeeps
 	dba Sfx_4NoteDitty
 	dba Sfx_Twinkle
+;new to this mod
+	dba Sfx_Berry
 	assert_table_length NUM_SFX

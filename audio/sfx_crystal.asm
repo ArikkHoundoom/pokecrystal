@@ -288,9 +288,9 @@ Sfx_Twinkle_Ch5:
 
 Sfx_Berry:
 	channel_count 3
-	channel 1, Sfx_Berry_Ch5
-	channel 2, Sfx_Berry_Ch6
-	channel 3, Sfx_Berry_Ch7
+	channel 5, Sfx_Berry_Ch5
+	channel 6, Sfx_Berry_Ch6
+	channel 7, Sfx_Berry_Ch7
 
 Sfx_Berry_Ch5:
 	toggle_sfx

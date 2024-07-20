@@ -293,6 +293,7 @@ Sfx_Berry:
 	channel 3, Sfx_Berry_Ch7
 
 Sfx_Berry_Ch5:
+	toggle_sfx
 	volume 7, 7
 	tempo 79
 	octave 4
@@ -332,6 +333,7 @@ Sfx_Berry_Ch5:
 	sound_ret
 
 Sfx_Berry_Ch6:
+	toggle_sfx
 	duty_cycle 1
 	note_type 12, 6, 7
 	octave 3
@@ -349,9 +351,11 @@ Sfx_Berry_Ch6:
 	note G_, 2
 	rest 1
 	note F_, 5
+	rest 12
 	sound_ret
 
 Sfx_Berry_Ch7:
+	toggle_sfx
 	note_type 12, 2, 0
 	octave 3
 	note A_, 8
@@ -368,4 +372,5 @@ Sfx_Berry_Ch7:
 	note A#, 2
 	rest 1
 	note A_, 5
+	rest 12
 	sound_ret

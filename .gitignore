@@ -14,6 +14,9 @@ gfx/pokemon/*/frames.asm
 !gfx/pokemon/unown/bitmask.asm
 !gfx/pokemon/unown/frames.asm
 
+# compiled rom directory
+rombuilds
+
 # compiled roms
 *.gbc
 *.gb

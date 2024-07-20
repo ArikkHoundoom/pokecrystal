@@ -297,6 +297,7 @@ INCLUDE "engine/events/battle_tower/rules.asm"
 INCLUDE "mobile/mobile_22_2.asm"
 
 
+
 SECTION "bank23", ROMX
 
 INCLUDE "engine/tilesets/timeofday_pals.asm"
@@ -306,7 +307,7 @@ INCLUDE "engine/events/magnet_train.asm"
 INCLUDE "engine/battle/battlestart_copytilemapatonce.asm"
 INCLUDE "engine/sprite_anims/core.asm"
 INCLUDE "engine/gfx/mon_icons.asm"
-
+INCLUDE "data/items/berries.asm"
 
 SECTION "bank24", ROMX
 

@@ -532,7 +532,9 @@ Script_specialsound:
 	ld de, SFX_GET_TM
 	jr z, .play
 	ld a, [wCurItem]
-	cp BerryItems
+	ld de, 1
+	ld hl, BerryItems
+	call IsInArray
 	ld de, SFX_GET_BERRY
 	jr z, .play
 	ld de, SFX_ITEM
@@ -540,6 +542,8 @@ Script_specialsound:
 	call PlaySFX
 	call WaitSFX
 	ret	
+	
+INCLUDE "data/items/berries.asm"
 
 GetPocketName:
 	farcall CheckItemPocket

@@ -1,5 +1,5 @@
 BerryItems:
-	db PSNCUREBERRY
+    db PSNCUREBERRY
     db PRZCUREBERRY
     db BURNT_BERRY
     db ICE_BERRY
@@ -7,6 +7,6 @@ BerryItems:
     db MINT_BERRY
     db MIRACLEBERRY
     db MYSTERYBERRY
-	db BERRY
-	db GOLD_BERRY
+    db BERRY
+    db GOLD_BERRY
     db -1

@@ -103,12 +103,14 @@ int parse_number(const char *input, int base) {
 
 void parse_symbol_value(char *input, int *restrict bank, int *restrict address) {
 	char *colon = strchr(input, ':');
-	if (!colon) {
-		error_exit("Error: Cannot parse bank+address: \"%s\"\n", input);
+	if (colon) {
+		*colon++ = '\0';
+		*bank = parse_number(input, 16);
+		*address = parse_number(colon, 16);
+	} else {
+		*bank = 0;
+		*address = parse_number(input, 16);
 	}
-	*colon++ = '\0';
-	*bank = parse_number(input, 16);
-	*address = parse_number(colon, 16);
 }
 
 void parse_symbols(const char *filename, struct Symbol **symbols) {
@@ -415,7 +417,7 @@ struct Buffer *process_template(const char *template_filename, const char *patch
 int compare_patch(const void *patch1, const void *patch2) {
 	unsigned int offset1 = ((const struct Patch *)patch1)->offset;
 	unsigned int offset2 = ((const struct Patch *)patch2)->offset;
-	return offset1 > offset2 ? 1 : offset1 < offset2 ? -1 : 0;
+	return (offset1 > offset2) - (offset1 < offset2);
 }
 
 bool verify_completeness(FILE *restrict orig_rom, FILE *restrict new_rom, struct Buffer *patches) {
